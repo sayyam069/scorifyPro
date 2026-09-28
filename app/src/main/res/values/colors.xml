@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1B5E20</color>
+    <color name="primary_dark">#0A3A0F</color>
+    <color name="accent">#FF9800</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Professional Light Theme Colors -->
+    <color name="theme_background">#F0F2F5</color>
+    <color name="theme_card">#FFFFFF</color>
+    <color name="theme_text_primary">#1C1E21</color>
+    <color name="theme_text_secondary">#606770</color>
+    <color name="theme_icon_tint">#1C1E21</color>
+    <color name="theme_button_bg">#E4E6EB</color>
+    <color name="theme_button_text">#1C1E21</color>
+    <color name="theme_divider">#DADDE1</color>
+    <color name="theme_status_bar">#F0F2F5</color>
+</resources>

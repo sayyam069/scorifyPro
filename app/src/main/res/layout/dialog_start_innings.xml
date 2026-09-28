@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#1A1A1A">
+
+    <TextView
+        android:id="@+id/tvInningsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Next Innings"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etInningsStriker"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Opening Batsman 1"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="12dp"
+        android:paddingHorizontal="12dp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/etInningsNonStriker"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Opening Batsman 2"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="12dp"
+        android:paddingHorizontal="12dp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/etInningsBowler"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Opening Bowler"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        android:backgroundTint="#FF9800"
+        android:layout_marginBottom="24dp"
+        android:paddingHorizontal="12dp"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/btnInningsStart"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="START INNINGS"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Professional Dark Theme Colors -->
+    <color name="theme_background">#0A0A0A</color>
+    <color name="theme_card">#1A1A1A</color>
+    <color name="theme_text_primary">#FFFFFF</color>
+    <color name="theme_text_secondary">#B3B3B3</color>
+    <color name="theme_icon_tint">#FFFFFF</color>
+    <color name="theme_button_bg">#333333</color>
+    <color name="theme_button_text">#FFFFFF</color>
+    <color name="theme_divider">#333333</color>
+    <color name="theme_status_bar">#0A0A0A</color>
+</resources>

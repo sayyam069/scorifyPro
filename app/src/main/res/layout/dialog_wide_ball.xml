@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#1A1A1A">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wide Ball - Select Extra Runs"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <!-- Runs Buttons Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnWide0"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:text="0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnWide1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:text="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnWide2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:text="2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnWide3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:text="3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Runs Buttons Row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnWide4"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:text="4"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnWide5"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:text="5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnWide6"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:text="6"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:backgroundTint="#333333"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#444444"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Run Out Button -->
+    <Button
+        android:id="@+id/btnWideRunOut"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="🏃 RUN OUT"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="#1A1A1A"
+    android:layout_marginBottom="1dp">
+
+    <!-- Player Name -->
+    <TextView
+        android:id="@+id/tvPlayerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:text="Player Name"
+        android:textSize="13sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <!-- Batting Stats Container -->
+    <LinearLayout
+        android:id="@+id/llBattingStats"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvRuns"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="R"
+            android:textSize="13sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvBalls"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B"
+            android:textSize="13sp"
+            android:textColor="#B3B3B3"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvFours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4s"
+            android:textSize="13sp"
+            android:textColor="#4CAF50"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvSixes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6s"
+            android:textSize="13sp"
+            android:textColor="#FF9800"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvSR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SR"
+            android:textSize="12sp"
+            android:textColor="#B3B3B3"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Bowling Stats Container -->
+    <LinearLayout
+        android:id="@+id/llBowlingStats"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvOvers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="O"
+            android:textSize="13sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvRunsGiven"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="R"
+            android:textSize="13sp"
+            android:textColor="#FF9800"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvWickets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="W"
+            android:textSize="13sp"
+            android:textColor="#D32F2F"
+            android:gravity="center"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

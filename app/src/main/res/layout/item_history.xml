@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="@color/theme_card"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvHistoryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024-05-20 14:30"
+            android:textSize="11sp"
+            android:textColor="@color/theme_text_secondary"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvHistoryTeamA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAK"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/theme_text_primary"/>
+                <TextView
+                    android:id="@+id/tvHistoryScoreA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="150/5 (20.0)"
+                    android:textSize="13sp"
+                    android:textColor="@color/theme_text_secondary"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VS"
+                android:textSize="12sp"
+                android:textColor="#FF9800"
+                android:layout_marginHorizontal="12dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvHistoryTeamB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IND"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/theme_text_primary"/>
+                <TextView
+                    android:id="@+id/tvHistoryScoreB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="151/2 (18.5)"
+                    android:textSize="13sp"
+                    android:textColor="@color/theme_text_secondary"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/theme_background"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvHistoryResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="India won by 8 wickets"
+            android:textSize="14sp"
+            android:textColor="#FF9800"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvHistoryPotm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌟 POTM: Babar Azam"
+            android:textSize="12sp"
+            android:textColor="#4CAF50"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

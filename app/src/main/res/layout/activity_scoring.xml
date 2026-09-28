@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0A0A0A">
+
+    <!-- Status Bar Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#0A0A0A"/>
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/tvTeamName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team A vs Team B"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#B3B3B3"
+            android:gravity="center"
+            android:background="#1A1A1A"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- FREE HIT Indicator -->
+        <LinearLayout
+            android:id="@+id/llFreeHit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="#FF9800"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tvFreeHitIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚡ FREE HIT ⚡"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Professional Scoreboard Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="12dp"
+        app:cardBackgroundColor="#1A1A1A"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/tvScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="56sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:id="@+id/tvWickets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/0"
+                    android:textSize="32sp"
+                    android:textColor="#B3B3B3"
+                    android:layout_marginBottom="10dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="end">
+                    <TextView
+                        android:id="@+id/tvOvers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Overs: 0.0/0"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:id="@+id/tvRunRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CRR: 0.00"
+                        android:textSize="14sp"
+                        android:textColor="#FF9800"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:paddingTop="12dp"
+                android:visibility="gone"
+                android:background="@drawable/divider_line">
+
+                <TextView
+                    android:id="@+id/tvTarget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Target: 0"
+                    android:textColor="#FF9800"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvRequired"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Need 0 from 0"
+                    android:textColor="#B3B3B3"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Players Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#1A1A1A"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:id="@+id/tvStriker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Striker*"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/tvNonStriker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Non-Striker"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:gravity="end"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#333333"
+            android:layout_marginVertical="8dp"/>
+
+        <TextView
+            android:id="@+id/tvBowler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎯 Bowler"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- This Over Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#1A1A1A"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THIS OVER:"
+            android:textColor="#B3B3B3"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/llCurrentOver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"/>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <!-- Scoring Buttons Grid -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <Button android:id="@+id/btn0" style="@style/ProfessionalNumberButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="0" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btn1" style="@style/ProfessionalNumberButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="1" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btn2" style="@style/ProfessionalNumberButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="2" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btn3" style="@style/ProfessionalNumberButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <Button android:id="@+id/btn4" style="@style/ProfessionalNumberButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="4" android:backgroundTint="#2E7D32" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btn6" style="@style/ProfessionalNumberButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="6" android:backgroundTint="#1565C0" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btn5" style="@style/ProfessionalNumberButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="5" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btnWicket" style="@style/ProfessionalNumberButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="W" android:backgroundTint="#C62828"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <Button android:id="@+id/btnWide" style="@style/ProfessionalActionButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="WIDE" android:backgroundTint="#FF9800" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btnNoBall" style="@style/ProfessionalActionButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="NO BALL" android:backgroundTint="#FF9800" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btnUndo" style="@style/ProfessionalActionButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="UNDO" android:backgroundTint="#616161"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1A1A1A"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnChangeBowler"
+            style="@style/ProfessionalActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BOWLER"
+            android:textSize="10sp"
+            android:backgroundTint="#333333"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnScorecard"
+            style="@style/ProfessionalActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="SCORECARD"
+            android:textSize="10sp"
+            android:backgroundTint="#673AB7"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnEndInnings"
+            style="@style/ProfessionalActionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="END INNINGS"
+            android:textSize="10sp"
+            android:backgroundTint="#1B5E20"/>
+    </LinearLayout>
+
+</LinearLayout>
